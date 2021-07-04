@@ -5,90 +5,96 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: arial, sans-serif;
   background-image: url("sunset.jpg");
-  background-size: cover;
-  background-position: top center;
 }
 
-.app-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(to-bottom, rgba (0, 0, 0, 0.6));
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 15px 15px;
-}
-
-header input {
-  width: 100%;
-  max-width: 280px;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 16px, 0px, 16px, 0px;
-  border-bottom: 3px solid #d4ab64;
-  color: #313131;
-  font-size: 20px;
-  font-weight: 300;
-  transition: 0.25 ease-out;
-}
-
-header input:focus {
-  background-color: rgba (255, 255, 255, 0.6);
-}
-
-main {
-  flex: 1 1 100%;
-  padding: 25px 25px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.location .city {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.location .date {
-  color: #fff;
-  font-size: 16px;
-}
-
-.current .temp {
-  color: #fff;
-  font-size: 102px;
-  font-weight: 900;
-  margin: 30px 0px;
-  text-shadow: 2px 8px rgba (0, 0, 0, 0, 6);
-}
-
-.cuurent .temp .span {
-  font-weight: 500;
-}
-
-.current .weather {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  font-style: italic;
-  margin-bottom: 15px;
-  text-shadow: 0px 3px rgba (0, 0, 0, 0.4);
-}
-
-.current .hi-low {
-  color: #fff;
+h1 {
+  color: #878787;
   font-size: 24px;
-  font-weight: 500;
-  text-shadow: 0px 4px rgba (0, 0, 0, 0.4);
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
